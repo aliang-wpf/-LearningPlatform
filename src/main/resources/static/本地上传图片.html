@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交图片</title>
+</head>
+<body>
+<h1>提交图片</h1>
+<form action="your-server-url" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <br><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
+
+<!--
+这段代码创建了一个基本的 HTML 表单。用户可以通过点击 "选择文件" 按钮来选择要上传的图片文件，然后通过点击 "提交" 按钮将图片提交到服务器的特定 URL（请在 `action` 属性中替换为您自己的服务器 URL）。
+
+请确保将上述代码保存为 `.html` 文件，并将 `<form>` 标签中的 `"your-server-url"` 替换为您要将图片上传到的实际服务器 URL。
+
+    请注意，此代码仅包含前端部分，您还需要在服务器端处理接收到的图片数据。-->

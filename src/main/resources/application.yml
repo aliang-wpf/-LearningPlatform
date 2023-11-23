@@ -1,0 +1,34 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver  #驱动类名称
+    url: jdbc:mysql://127.0.0.1:3306/study_management #数据库连接的url
+    username: root    #连接数据库的用户名
+    password: 123456   #连接数据库的密码
+
+
+  servlet:
+    multipart:
+      max-file-size: 10MB      #配置单个文件最大上传大小
+      max-request-size: 100MB   #配置单个请求最大上传大小(一次请求可以上传多个文件)
+
+mybatis:
+  configuration:
+    #指定mybatis输出日志的位置, 输出控制台
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #开启驼峰命名：如果字段名与属性名符合驼峰命名规则，mybatis会自动通过驼峰命名规则映射
+    map-underscore-to-camel-case: true
+
+aliyun:     #自定义的阿里云信息
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5tLfxJ2mhRhyckRVTDk8
+    accessKeySecret: Lrgy9pzRF1ffk6GX7L0Lff7TXRCFzm
+    bucketName: web-study-management
+
+  #spring事务管理日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+
