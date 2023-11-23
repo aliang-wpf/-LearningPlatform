@@ -19,12 +19,7 @@ mybatis:
     #开启驼峰命名：如果字段名与属性名符合驼峰命名规则，mybatis会自动通过驼峰命名规则映射
     map-underscore-to-camel-case: true
 
-aliyun:     #自定义的阿里云信息
-  oss:
-    endpoint: https://oss-cn-beijing.aliyuncs.com
-    accessKeyId: LTAI5tLfxJ2mhRhyckRVTDk8
-    accessKeySecret: Lrgy9pzRF1ffk6GX7L0Lff7TXRCFzm
-    bucketName: web-study-management
+
 
   #spring事务管理日志
 logging:
